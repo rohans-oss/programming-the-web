@@ -1,0 +1,181 @@
+:root {
+  --purple: #6d267d;
+  --white: #fff;
+  --light-gray: #f7f2fa;
+  --text-dark: #502050;
+  --accent: #ee68a4;
+}
+
+body {
+  margin: 0;
+  background: var(--light-gray);
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 930px;
+  margin: 40px auto;
+  padding: 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 0.2rem 2rem;
+}
+
+.left-block .intro {
+  text-align: left;
+}
+
+.intro h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #7a6470;
+  margin: 0 0 0.6rem 0;
+  max-width: 420px;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.rating-card {
+  background: #f3eefc;
+  padding: 0.67rem 2.1rem;
+  border-radius: 9px;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  min-width: 250px;
+  max-width: 320px;
+  box-shadow: 0 2px 8px rgba(100, 50, 100, 0.02);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.rating-card span {
+  color: #ffd700;
+  font-size: 1.15rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.rating-card.first { margin-right: 50px; }
+.rating-card.second { margin-right: 25px; }
+.rating-card.third { margin-right: 0px; }
+
+.rating-card p {
+  margin: 0;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+  min-height: 176px;
+}
+
+.testimonial {
+  background: var(--purple);
+  color: var(--white);
+  padding: 1.1rem 1rem;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.02rem;
+  box-shadow: 0 2px 16px rgba(70,30,80,0.07);
+  min-height: 137px;
+}
+
+/* Staggering effect */
+.card1 { align-self: start;   margin-top: 0px;    }
+.card2 { align-self: start;   margin-top: 18px;   }
+.card3 { align-self: start;   margin-top: 37px;   }
+
+.user {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.user img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user strong {
+  font-size: 1rem;
+}
+
+.user span {
+  display: block;
+  font-size: 0.87rem;
+  color: var(--accent);
+  margin-top: 2px;
+}
+
+.testimonial blockquote {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 899px) {
+  .container {
+    max-width: 97vw;
+    padding: 0.3rem 0.2rem;
+  }
+  .grid-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem 0;
+  }
+  .ratings {
+    align-items: flex-start;
+  }
+  .rating-card, .rating-card.first, .rating-card.second, .rating-card.third {
+    margin-right: 0;
+    min-width: 180px;
+    max-width: 97vw;
+    font-size: 0.97rem;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .card1, .card2, .card3 {
+    margin-top: 0;
+  }
+  .testimonial {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.97rem;
+    min-height: initial;
+  }
+  .intro h1 {
+    font-size: 1.25rem;
+  }
+  .user img {
+    width: 27px;
+    height: 27px;
+  }
+}

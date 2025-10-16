@@ -3,35 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Preview Card</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Responsive Social Proof</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="card">
-    <div class="card-image">
-      <img src="image.jpg" alt="Gabrielle Chanel Perfume" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x500?text=Image+Not+Found';">
-    </div>
-
-    <div class="card-content">
-      <p class="category">PERFUME</p>
-      <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
-      <p class="description">
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-
-      <div class="price-section">
-        <span class="price">$149.99</span>
-        <span class="old-price">$169.99</span>
+  <main class="container">
+    <section class="grid-layout">
+      <div class="left-block">
+        <section class="intro">
+          <h1>10,000+ of our users love our products.</h1>
+          <p>
+            We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.
+          </p>
+        </section>
       </div>
-
-      <button class="add-to-cart">
-        <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="currentColor"/>
-        </svg>
-        Add to Cart
-      </button>
-    </div>
-  </div>
+      <div class="right-block">
+        <section class="ratings">
+          <div class="rating-card first">
+            <span>★★★★★</span>
+            <p>Rated 5 Stars in Reviews</p>
+          </div>
+          <div class="rating-card second">
+            <span>★★★★★</span>
+            <p>Rated 5 Stars in Report Guru</p>
+          </div>
+          <div class="rating-card third">
+            <span>★★★★★</span>
+            <p>Rated 5 Stars in BestTech</p>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="testimonials">
+      <article class="testimonial card1">
+        <div class="user">
+          <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Colton Smith" />
+          <div>
+            <strong>Colton Smith</strong>
+            <span>Verified Buyer</span>
+          </div>
+        </div>
+        <blockquote>
+          “We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!”
+        </blockquote>
+      </article>
+      <article class="testimonial card2">
+        <div class="user">
+          <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Irene Roberts" />
+          <div>
+            <strong>Irene Roberts</strong>
+            <span>Verified Buyer</span>
+          </div>
+        </div>
+        <blockquote>
+          “Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.”
+        </blockquote>
+      </article>
+      <article class="testimonial card3">
+        <div class="user">
+          <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Anne Wallace" />
+          <div>
+            <strong>Anne Wallace</strong>
+            <span>Verified Buyer</span>
+          </div>
+        </div>
+        <blockquote>
+          “Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!”
+        </blockquote>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
